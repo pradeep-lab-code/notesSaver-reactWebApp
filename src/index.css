@@ -1,0 +1,258 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #e5e7eb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #181818;
+  border-bottom: 1px solid #2a2a2a;
+  align-items: center;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #2563eb;
+}
+
+.navbar a.active {
+  background-color: #a3e635;
+  color: #020202;
+}
+
+/* Home Page */
+.home {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.home-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-title-input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+}
+
+.home-btn {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.home-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Textarea */
+.home-textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+.home-textarea:focus,
+.home-title-input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Notes Page */
+.all-notes {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.notes-search {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.notes-search:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Notes Card */
+.note-card {
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 0.8rem;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.note-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.note-content {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+
+/* Buttons */
+.note-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.note-actions button,
+.note-actions .edit-btn,
+.note-actions .view-btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1f1f1f;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #1f1f1f;
+  border: 1px solid #2a2a2a;
+}
+.edit-btn:hover {
+  background-color: #2563eb;
+}
+
+/* View button */
+.view-btn {
+  background-color: #1f1f1f;
+  border: 1px solid #2a2a2a;
+}
+.view-btn:hover {
+  background-color: #44fd63;
+}
+
+/* Copy button */
+.copy-btn {
+  background-color: #1f1f1f;
+  border: 1px solid #2a2a2a;
+}
+.copy-btn:hover {
+  background-color: #be33ff;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #dc2626;
+  border: 1px solid #b91c1c;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Date */
+.note-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+/* View Page */
+.view-note {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.view-note-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.view-note-title {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+}
+
+.view-note-textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #2a2a2a;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: none;
+}
